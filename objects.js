@@ -6,4 +6,16 @@ var me = {
 	'hair color': 'brown'
 };
 
-//2. Iterate over the object to console.log the propery or key names. 
+me.name = "Porter Wilcox";
+me.age = 23;
+me["hair color"] = "BROWN"
+
+// console.log(me);
+
+//2. Iterate over the object to console.log the property or key names. 
+
+// console.log(Object.getOwnPropertyNames(me));
+
+// for (let prop in me) {
+// 	console.log(`My ${prop} is ${me[prop]}`);
+// }
