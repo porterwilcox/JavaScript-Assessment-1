@@ -60,6 +60,48 @@ var crayola1990 = [
 
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
+function slugNames(arr) {
+	let slugURL;
+	for (let i = 0; i < arr.length; i++) {
+		const e = arr[i];
+		slugURL = e.toLowerCase().replace(/\s/g, '-');
+		arr[i] = slugURL;
+	}
+	console.log(crayola1990);
+}
+
+
+// slugNames(crayola1990);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** HINTS *******
  * remember strings are immutable but the value of a variable can be adjusted as often as needed.
  * take advantage of the methods available on stings http://www.w3schools.com/js/js_string_methods.asp
