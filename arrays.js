@@ -2,6 +2,7 @@
 
 var contacts = [];
 
+// console.log(contacts.length)
 
 //2. Add the following people to the contacts array.
 
@@ -32,6 +33,33 @@ var tom = {
 	title: 'instructor'
 };
 
+function toContacts(obj) {
+	contacts.push(obj);
+}
+
+toContacts(jake);
+toContacts(matt);
+toContacts(tony);
+toContacts(andrew);
+toContacts(tom);
+
+// console.log(contacts);
+
 
 //3. Woops after adding all of those people to the same contacts list you realized you need a list just the instructors. Create a new variable named instructors populate it using contacts array. 
+
+let instructors = [];
+
+function toInstructor(arr) {
+	for (let i = 0; i < arr.length; i++) {
+		const e = arr[i];
+		if(e.title == "instructor") {
+			instructors.push(e);
+		}			
+	}
+}
+
+// toInstructor(contacts);
+// console.log(instructors);
+
 
